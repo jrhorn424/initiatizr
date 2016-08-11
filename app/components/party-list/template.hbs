@@ -1,13 +1,3 @@
 {{#each sortedParty as |member|}}
-  <ul class="party-list__member">
-    <li class="party-list__member__trait">
-      <label>Name:</label> {{member.character}}
-    </li>
-    <li class="party-list__member__trait">
-      <label>Player:</label> {{member.player}}
-    </li>
-    <li class="party-list__member__trait">
-      <label>Initiative:</label> {{member.initiative}}
-    </li>
-  </ul>
+  {{party-list/member member=member}}
 {{/each}}
