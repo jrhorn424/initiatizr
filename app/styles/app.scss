@@ -1,0 +1,17 @@
+@import 'bootstrap';
+@import 'bootstrap/theme';
+
+body {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 40px auto;
+  max-width: 650px;
+}
+
+.party-list__member {
+  list-style: none;
+}
+
+.party-list__member__trait {
+  display: inline-block;
+}
