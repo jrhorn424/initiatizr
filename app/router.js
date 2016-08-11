@@ -7,7 +7,6 @@ const Router = Ember.Router.extend({
 
 Router.map(function () {
   this.route('party');
-  this.route('member-edit', { path: 'member/:member_id/edit'});
 });
 
 export default Router;

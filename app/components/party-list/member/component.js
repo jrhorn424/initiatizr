@@ -4,9 +4,15 @@ export default Ember.Component.extend({
   tagName: 'ul',
   classNames: ['party-list__member'],
 
+  editable: false,
+
   actions: {
     edit () {
-      this.sendAction('edit', this.get('member'));
-    }
+      this.toggleProperty('editable');
+    },
+
+    save () {
+      this.toggleProperty('editable');
+    },
   },
 });

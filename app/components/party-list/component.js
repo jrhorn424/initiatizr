@@ -5,10 +5,4 @@ export default Ember.Component.extend({
   classNames: ['party-list'],
   sortedParty: Ember.computed.sort('party.members', 'sortDefinition'),
   sortDefinition: ['initiative:desc'],
-
-  actions: {
-    editMember (member) {
-      this.sendAction('editMember', member);
-    }
-  },
 });
