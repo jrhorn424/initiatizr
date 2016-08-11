@@ -1,0 +1,29 @@
+<form {{action "submit" on="submit"}}>
+  <div class="form-group">
+    <label for="name">Name:</label>
+    {{input type="text"
+           class="form-control"
+           id="name"
+           placeholder="Character name"
+           value=member.character}}
+  </div>
+  <div class="form-group">
+    <label for="player">Player:</label>
+    {{input type="text"
+           class="form-control"
+           id="player"
+           placeholder="Player name"
+           value=member.player}}
+  </div>
+  <div class="form-group">
+    <label for="initiative">Initiative:</label>
+    {{input type="text"
+           class="form-control"
+           id="initiative"
+           placeholder="Initiative score"
+           value=member.initiative}}
+  </div>
+  <button type="submit" class="btn btn-default">
+    Save
+  </button>
+</form>
